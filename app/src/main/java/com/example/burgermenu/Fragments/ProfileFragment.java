@@ -30,7 +30,7 @@ public class ProfileFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Logout Declined", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Logout", Toast.LENGTH_SHORT).show();
             }
         });
 
