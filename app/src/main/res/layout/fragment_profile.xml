@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191928"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#191928"
+        android:layout_margin="16dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="24dp"
+            android:id="@+id/cvProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:src="@drawable/profile"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Profile Menu"
+            android:textAlignment="center"
+            android:textColor="#7c7e8b"
+            android:padding="8dp"
+            android:background="@drawable/textview_background"
+            android:textSize="32dp"
+            android:layout_below="@id/cvProfile"/>
+
+        <TextView
+            android:id="@+id/tvBioProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Satria Jagad Samudra\nfrom PPLG 2 in\nSMK Raden Umar Said Kudus"
+            android:textAlignment="center"
+            android:textColor="#7c7e8b"
+            android:padding="8dp"
+            android:background="@drawable/textview_background"
+            android:textSize="24dp"
+            android:layout_below="@id/tvProfile"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/textview_background"
+            android:text="Logout"
+            android:padding="16dp"
+            android:textColor="#7c7e8b"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="24dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+</FrameLayout>
